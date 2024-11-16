@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+
+  <h1>PASSIVE INCOME</h1>
+
+
+  <hr>
+  <a href="/coin">목록조회</a>
+  |
+  <a href="/coin/candle/candle.html">시세조회</a>
+  |
+  <a href="/coin/order/order.html">주문하기</a>
+
+
+  <hr>
+
+  <h2>목록 조회</h2>
+
+  <button onclick="marketAll();">전체</button>
+  <button onclick="marketKRW();">원화(KRW)</button>
+
+  <br>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ticker</th>
+        <th>korean_name</th>
+        <th>english_name</th>
+      </tr>
+    </thead>
+    <tbody id="coin-list">
+
+    </tbody>
+  </table>
+
+</body>
+
+</html>

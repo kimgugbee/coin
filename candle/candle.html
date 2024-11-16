@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./candle.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>PASSIVE INCOME</h1>
+
+
+  <hr>
+  <a href="/coin">목록조회</a>
+  |
+  <a href="/coin/candle/candle.html">시세조회</a>
+  |
+  <a href="/coin/order/order.html">주문하기</a>
+
+  <hr>
+
+  <h2>시세 조회</h2>
+
+  <label for="">ticker : </label><input list="coin-list" type="text" name="ticker" placeholder="ex) KRW-BTC">
+  <datalist id="coin-list">
+    <option value="apple"></option>
+    <option value="banana"></option>
+    <option value="samsung"></option>
+  </datalist>
+  <br>
+  <button onclick="getCandle('minutes/1');">분</button>
+  <button onclick="getCandle('days');">일</button>
+  <button onclick="getCandle('weeks');">주</button>
+  <button onclick="getCandle('months');">월</button>
+  <h2 id="ticker-title"></h2>
+  <table border="1">
+    <tbody id="candle-table">
+      <tr>
+        <th>고가</th>
+      </tr>
+      <tr>
+        <th>저가</th>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+</body>
+
+</html>
